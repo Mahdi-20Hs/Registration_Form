@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <form action="" method="get">
+    <section class="formHeader">
+      <h1>Registration Form</h1>
+      <p>Required fields are labeled with <strong>'*'</strong>.</p>
+    </section>
+    <section class="personalInfo">
+      <h2>Personal Information</h2>
+
+      <div class="firstName">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" pattern="[a-zA-Z]" required>
+      </div>
+
+      <div class="lastName">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" pattern="[a-zA-Z]" required>
+      </div>
+
+      <div class="age">
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required min="18" max="100" step="1">
+      </div>
+
+      <div class="gender">
+        <ul>
+          <li>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+          </li>
+          <li>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+          </li>
+          <li>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+          </li>
+        </ul>
+      </div>
+
+      <div class="noGender">
+        <label for="noGender">I prefer not to reveal my gender</label>
+        <input type="checkbox" name="noGender" id="noGender">
+      </div>
+      
+    </section>
+    <section class="submit">
+      <button type="submit">Submit</button>
+    </section>
+  </form>
+</body>
+</html>
