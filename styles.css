@@ -22,3 +22,28 @@ form{
 .formHeader h1{
   margin-bottom: 5px;
 }
+
+.personalInfo {
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input input{
+  padding: 5px 5px 5px 10px;
+  font-size: 16px;
+}
+
+.input:valid{
+  border: 2px solid green;
+}
+.input:invalid{
+  border: 2px solid red;
+}

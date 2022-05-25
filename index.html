@@ -14,23 +14,26 @@
       <h1>Registration Form</h1>
       <p>Required fields are labeled with <strong>'*'</strong>.</p>
     </section>
-    
+
     <section class="personalInfo">
       <h2>Personal Information</h2>
 
-      <div class="firstName">
-        <label for="firstName">First Name</label>
+      <div class="firstName input">
+        <label for="firstName">First Name:</label>
         <input type="text" name="firstName" id="firstName" placeholder="First Name" pattern="[a-zA-Z]" required>
+        <span></span>
       </div>
 
-      <div class="lastName">
-        <label for="lastName">Last Name</label>
+      <div class="lastName input">
+        <label for="lastName">Last Name:</label>
         <input type="text" name="lastName" id="lastName" placeholder="Last Name" pattern="[a-zA-Z]" required>
+        <span></span>
       </div>
 
-      <div class="age">
+      <div class="age input">
         <label for="age">Age:</label>
-        <input type="number" name="age" id="age" required min="18" max="100" step="1">
+        <input type="number" name="age" id="age" required min="18" max="100" step="1" placeholder="Age">
+        <span></span>
       </div>
 
       <div class="gender">
