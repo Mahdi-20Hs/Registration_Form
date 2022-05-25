@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+form{
+  width: 40%;
+  max-width: 500px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.formHeader{
+  background-color: #15133C;
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+  color: white;
+}
+.formHeader h1{
+  margin-bottom: 5px;
+}
