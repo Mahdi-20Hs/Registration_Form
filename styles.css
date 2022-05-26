@@ -79,3 +79,36 @@ form{
 .input input:invalid:not(:placeholder-shown):not(:focus) + span::before{
   content: url(./assets/cross-mark-button-svgrepo-com.svg);
 }
+
+.gender ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+div:first-child{
+  margin-bottom: 5px;
+}
+
+.noGender{
+  display: flex;
+}
+
+.noGender label{
+  flex-grow: 2;
+}
+
+.noGender input{
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  padding: 2px;
+  border: 1px solid gray;
+  position: relative;
+}
+
+.noGender input:checked{
+  content: url(./assets/checkbox.svg);
+  background-color: #15133C;
+}
