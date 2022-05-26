@@ -21,13 +21,13 @@
 
       <div class="firstName input">
         <label for="firstName">First Name:<strong>'*'</strong></label>
-        <input type="text" name="firstName" id="firstName" placeholder="First Name" pattern="[a-zA-Z]+" required>
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" pattern="[a-zA-Z]+" required title="Use charachters only">
         <span></span>
       </div>
 
       <div class="lastName input">
         <label for="lastName">Last Name:<strong>'*'</strong></label>
-        <input type="text" name="lastName" id="lastName" placeholder="Last Name" pattern="[a-zA-Z]+" required>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" pattern="[a-zA-Z]+" required title="Use charachters only">
         <span></span>
       </div>
 
@@ -37,8 +37,8 @@
         <span></span>
       </div>
 
-      <div class="gender">
-        <div>Gender:</div>
+      <fieldset class="gender">
+        <legend>Gender</legend>
         <ul>
           <li>
             <input type="radio" name="gender" id="male" value="male">
@@ -56,7 +56,7 @@
           </li>
 
         </ul>
-      </div>
+      </fieldset>
 
       <div class="noGender">
         <label for="noGender">I prefer not to reveal my gender</label>

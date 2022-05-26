@@ -4,6 +4,7 @@
   margin: 0%;
   box-sizing: border-box;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: bold;
 }
 form{
   width: 40%;
@@ -42,11 +43,14 @@ form{
   font-size: 16px;
 }
 
+.input input:focus{
+  outline: none;
+}
 .input input:valid{
   border: 2px solid green;
 }
 
-.input input:invalid:not(:placeholder-shown):not(:focus){
+.input input:invalid:not(:placeholder-shown){
   border: 2px solid red;
 }
 
@@ -60,23 +64,22 @@ form{
   color: white;
   padding: 3px 5px;
   font-size: 12px;
-  font-weight: bold;
 }
 
-.input input:valid:not(:placeholder-shown):not(:focus) + span::before,
-.input input:invalid:not(:placeholder-shown):not(:focus) + span::before
+.input input:valid:not(:placeholder-shown) + span::before,
+.input input:invalid:not(:placeholder-shown) + span::before
 {
   position: absolute;
   right: 10px;
   top: 34px;
 }
 
-.input input:valid:not(:placeholder-shown):not(:focus) + span::before{
+.input input:valid:not(:placeholder-shown) + span::before{
   content: url(./assets/check-mark-button-svgrepo-com.svg);
 }
 
 
-.input input:invalid:not(:placeholder-shown):not(:focus) + span::before{
+.input input:invalid:not(:placeholder-shown) + span::before{
   content: url(./assets/cross-mark-button-svgrepo-com.svg);
 }
 
@@ -84,7 +87,7 @@ form{
   list-style: none;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 div:first-child{
@@ -93,10 +96,19 @@ div:first-child{
 
 .noGender{
   display: flex;
+  margin-top: 16px;
 }
 
 .noGender label{
   flex-grow: 2;
+}
+
+legend{
+  background-color: #15133C;
+  color: white;
+  font-size: 16px;
+  padding: 3px 5px;
+  margin: 10px;
 }
 
 .noGender input{
@@ -111,4 +123,28 @@ div:first-child{
 .noGender input:checked{
   content: url(./assets/checkbox.svg);
   background-color: #15133C;
+}
+
+
+.submit{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.submit button{
+  background-color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #15133C;
+  border: 1px solid #15133C;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+.submit button:hover{
+  background-color: #15133C;
+  color: white;
+  transition-duration: 0.1s;
 }
