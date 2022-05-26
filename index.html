@@ -10,6 +10,7 @@
 </head>
 <body>
   <form action="" method="get">
+
     <section class="formHeader">
       <h1>Registration Form</h1>
       <p>Required fields are labeled with <strong>'*'</strong>.</p>
@@ -19,37 +20,41 @@
       <h2>Personal Information</h2>
 
       <div class="firstName input">
-        <label for="firstName">First Name:</label>
-        <input type="text" name="firstName" id="firstName" placeholder="First Name" pattern="[a-zA-Z]" required>
+        <label for="firstName">First Name:<strong>'*'</strong></label>
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" pattern="[a-zA-Z]+" required>
         <span></span>
       </div>
 
       <div class="lastName input">
-        <label for="lastName">Last Name:</label>
-        <input type="text" name="lastName" id="lastName" placeholder="Last Name" pattern="[a-zA-Z]" required>
+        <label for="lastName">Last Name:<strong>'*'</strong></label>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" pattern="[a-zA-Z]+" required>
         <span></span>
       </div>
 
       <div class="age input">
-        <label for="age">Age:</label>
+        <label for="age">Age:<strong>'*'</strong></label>
         <input type="number" name="age" id="age" required min="18" max="100" step="1" placeholder="Age">
         <span></span>
       </div>
 
       <div class="gender">
         <ul>
+
           <li>
             <label for="male">Male</label>
             <input type="radio" name="gender" id="male" value="male">
           </li>
+
           <li>
             <label for="female">Female</label>
             <input type="radio" name="gender" id="female" value="female">
           </li>
+
           <li>
             <label for="other">Other</label>
             <input type="radio" name="gender" id="other" value="other">
           </li>
+
         </ul>
       </div>
 
@@ -59,9 +64,11 @@
       </div>
       
     </section>
+
     <section class="submit">
       <button type="submit">Submit</button>
     </section>
+    
   </form>
 </body>
 </html>

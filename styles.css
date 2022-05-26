@@ -34,6 +34,7 @@ form{
   display: flex;
   flex-direction: column;
   gap: 5px;
+  position: relative;
 }
 
 .input input{
@@ -41,9 +42,40 @@ form{
   font-size: 16px;
 }
 
-.input:valid{
+.input input:valid{
   border: 2px solid green;
 }
-.input:invalid{
+
+.input input:invalid:not(:placeholder-shown):not(:focus){
   border: 2px solid red;
+}
+
+
+.input input:required + span::after{
+  content: 'Required';
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: #15133C;
+  color: white;
+  padding: 3px 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.input input:valid:not(:placeholder-shown):not(:focus) + span::before,
+.input input:invalid:not(:placeholder-shown):not(:focus) + span::before
+{
+  position: absolute;
+  right: 10px;
+  top: 34px;
+}
+
+.input input:valid:not(:placeholder-shown):not(:focus) + span::before{
+  content: url(./assets/check-mark-button-svgrepo-com.svg);
+}
+
+
+.input input:invalid:not(:placeholder-shown):not(:focus) + span::before{
+  content: url(./assets/cross-mark-button-svgrepo-com.svg);
 }
